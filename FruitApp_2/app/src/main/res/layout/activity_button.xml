@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/txtAd"
+        android:hint="Meyve Adı"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></EditText>
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:hint="Fiyatı"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:inputType="number"
+        android:hint="Stok Adedi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:hint="Açıklama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:onClick="btnKaydet"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:text="Kaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
